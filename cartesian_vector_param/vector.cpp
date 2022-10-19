@@ -52,10 +52,10 @@ Vector Vector::operator+(const Vector& rhs)
 
 Vector Vector::operator-(const Vector& rhs)
 {
-    auto v = Vector();
+    auto new_v = Vector();
     for (int i = 0; i < rhs.getSize(); i++)
-        v[i] = rhs[i] - (*this)[i];
-    return v;
+        new_v[i] = rhs[i] - (*this)[i];
+    return new_v;
 }
 
 value Vector::operator*(const Vector& rhs)
