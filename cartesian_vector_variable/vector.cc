@@ -3,6 +3,7 @@
 
 #include "vector.hh"
 
+
 Vector::Vector(const Vector& rhs)
         : N(rhs.N)
         , data(new value[N])
